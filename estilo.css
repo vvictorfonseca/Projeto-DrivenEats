@@ -1,0 +1,226 @@
+body {
+   background-color: #E5E5E5;
+}
+
+/* HEADER */
+
+.barra-topo {
+    height: 92px;
+    background-color: #CF2B2B;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    display: flex;
+}
+.titulo {
+    height: 44px;
+    width: 248px;
+    margin-top: 8px;
+    margin-left: 21px;
+    bottom: 0;
+    font-family: Righteous;
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 55px;
+    letter-spacing: -0.012em;
+    text-align: left;
+    color: #ffffff;
+}
+.sub-titulo {
+    height: 17px;
+    width: 226px;
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-top: -6px;
+    margin-bottom: 18px;
+}
+
+/*Corpo do Site*/
+
+.titulo-1 {
+    width: 250px;
+    height: 25px;
+    
+    margin-left: 19px;
+    margin-top: 31px;
+    font-family: Righteous;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0.018em;
+    text-align: left;
+}
+.prato-1 {
+    width: 172px;
+
+    background-color: white;
+    margin-top: 17px;
+    margin-left: 19px;
+    box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25);
+    border-radius: 9px;
+}
+.prato-2 {
+    width: 172px;
+    background-color: white;
+    margin-top: 17px;
+    margin-left: 16px;
+    box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25);
+    border-radius: 9px;
+} 
+.imagens-site {
+    margin-top: 18px;
+    margin-left: 14px;
+    margin-right: 14px;
+}
+.nome-prato {
+    width: 139px;
+    height: 23px;
+    
+    margin-left: 15px;
+    margin-top: 8px;
+    font-family: Roboto;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+.descrição {
+    width: 147px;
+    height: 39px;
+    
+    margin-left: 14px;
+    margin-top: 4px;
+    font-family: Roboto;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+.descrição2 {
+    width: 147px;
+    height: 18px;
+    
+    margin-left: 14px;
+    margin-top: 4px;
+    font-family: Roboto;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+.prato {
+    display: flex;
+    overflow: scroll;
+}
+.prato2 {
+    display: flex;
+    overflow: scroll;
+    margin-bottom: 16px;
+}
+.preço {
+    width: 66px;
+    height: 19px;
+    margin-left: 14px;
+    margin-top: 5px;
+    margin-bottom: 13px;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+.preço2 {
+    width: 66px;
+    height: 19px;
+    margin-left: 14px;
+    margin-top: 8px;
+    margin-bottom: 16px;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+.titulo-2 {
+    width: 250px;
+    height: 25px;
+    
+    margin-left: 19px;
+    margin-top: 27px;
+    font-family: Righteous;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0.018em;
+    text-align: left;
+}
+.titulo-2 {
+    width: 320px;
+    height: 25px;
+    
+    margin-left: 19px;
+    margin-top: 27px;
+    font-family: Righteous;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0.018em;
+    text-align: left;
+}
+
+/*FOOTER*/
+
+.barra-fundo {
+    height: 92px;
+    background-color: #FFFFFF;
+    display: flex;
+}
+.caixar-fechar-pedido {
+    width: 364px;
+    height: 61px;
+    background-color: #CBCBCB;
+    border-radius: 50px;
+    margin: 15px auto;
+}
+.fechar-pedido {
+    width: 364px;
+    height: 53px;
+    margin-top: 8px;
+    color: white;
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0.018em;
+    text-align: center;
+}
+.fechar-pedido2 {
+    margin-left: 97px;
+    margin-top: -34px;
+    color: white;
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0.018em;
+}
