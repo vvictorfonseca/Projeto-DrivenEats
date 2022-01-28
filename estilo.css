@@ -207,6 +207,15 @@ body {
     background-color: #CBCBCB;
     border-radius: 50px;
     margin: 15px auto;
+    color: white;
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0.018em;
+    text-align: center;
+
 }
 .fechar-pedido {
     width: 200px;

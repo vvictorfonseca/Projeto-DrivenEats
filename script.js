@@ -1,3 +1,5 @@
+//Variáveis//
+
 let tem_prato = false;
 let tem_refri = false;
 let tem_sobremesa = false;
@@ -6,10 +8,13 @@ let precoPrato;
 let precoRefri;
 let precoSobremesa;
 let total;
+let totalArredondado;
 
 let prato;
 let refrigerante;
 let sobremesa;
+
+let mensagem;
 
 //Pratos//
 
@@ -197,6 +202,7 @@ function sobremesa4 () {
     }
 }
 
+//Funcionalidade para ativar o botão de Fechar Pedido//
 
 function ativarBotão() {
 
@@ -205,12 +211,17 @@ function ativarBotão() {
     document.getElementById("botao").innerHTML = "Fechar Pedido";
 }
 
+//Funcionalidade para mensagem enviado via WPP//
+
 function finalizarPedido() {
     
-    let total = precoPrato + precoRefri + precoSobremesa;
-    totalArredondado = total.tofixed(2);
+    total = precoPrato + precoRefri + precoSobremesa;
+    totalArredondado = total.toFixed(2);
 
     let nome= prompt("Pode nos informar seu nome?");
-    let endereço= prompt("Nos informe endereço para entrega");
+    let endereço= prompt("Nos informe endereço para entrega")
 
+    mensagem = `Olá, gostaria de fazer um pedido: \n\n- Prato: ${prato} \n- Bebida: ${refrigerante} \n- Sobremesa: ${sobremesa} \n\n Total: ${totalArredondado} \n\n Nome: ${nome} \n Endereço de destino: ${endereço}`;
+
+    window.open("https://wa.me/5524999642965?text=" + encodeURI (mensagem));
 }
