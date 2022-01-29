@@ -85,15 +85,6 @@ body {
     letter-spacing: 0.018em;
     text-align: left;
 }
-.prato-1 {
-    width: 172px;
-    background-color: white;
-    margin-top: 17px;
-    margin-left: 19px;
-    box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25);
-    border-radius: 9px;
-    border: 2px solid white;
-}
 .prato-2 {
     width: 172px;
     background-color: white;
@@ -103,6 +94,28 @@ body {
     border-radius: 9px;
     border: 2px solid white;
 } 
+.bebida-2 {
+    width: 172px;
+    background-color: white;
+    margin-top: 17px;
+    margin-left: 16px;
+    box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25);
+    border-radius: 9px;
+    border: 2px solid white;
+} 
+.sobremesa-2 {
+    width: 172px;
+    background-color: white;
+    margin-top: 17px;
+    margin-left: 16px;
+    box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25);
+    border-radius: 9px;
+    border: 2px solid white;
+} 
+.selecionado {
+    box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25), inset 0px 0px 0px 5px #32B72F;
+    border-color: #32B72F;
+}
 .imagens-site {
     width: 144px;
     height: 87px;
@@ -186,7 +199,10 @@ body {
 .prato .prato-2:nth-child(4) {
     margin-right: 19px;
 }
-.prato2 .prato-2:nth-child(4) {
+.prato .bebida-2:nth-child(4) {
+    margin-right: 19px;
+}
+.prato2 .sobremesa-2:nth-child(4) {
     margin-right: 19px;
 }
 
@@ -215,7 +231,6 @@ body {
     line-height: 23px;
     letter-spacing: 0.018em;
     text-align: center;
-
 }
 .fechar-pedido {
     width: 200px;

@@ -18,7 +18,7 @@ let mensagem;
 
 //Pratos//
 
-function prato1 () {
+/*function prato1 () {
     document.getElementById("prato_1").style.borderColor = "#32B72F";
     document.getElementById("prato_2").style.borderColor = "white";
     document.getElementById("prato_3").style.borderColor = "white";
@@ -87,7 +87,7 @@ function refri1 () {
     document.getElementById("refri_4").style.borderColor = "white";
 
     tem_refri = true;
-    refrigerante = "Coquinha gelada";
+    refrigerante = "Coca-Cola";
     precoRefri = 4.90;
 
     if (tem_prato && tem_refri && tem_sobremesa) {
@@ -102,7 +102,7 @@ function refri2 () {
     document.getElementById("refri_4").style.borderColor = "white";
 
     tem_refri = true;
-    refrigerante = "Pepsi gelado";
+    refrigerante = "Pepsi";
     precoRefri = 4.50;
 
     if (tem_prato && tem_refri && tem_sobremesa) {
@@ -117,7 +117,7 @@ function refri3 () {
     document.getElementById("refri_4").style.borderColor = "white";
 
     tem_refri = true;
-    refrigerante = "Guaraná gelado";
+    refrigerante = "Guaraná";
     precoRefri = 4.00;
 
     if (tem_prato && tem_refri && tem_sobremesa) {
@@ -132,7 +132,7 @@ function refri4 () {
     document.getElementById("refri_4").style.borderColor = "#32B72F";
 
     tem_refri = true;
-    refrigerante = "Fanta gelada";
+    refrigerante = "Fanta";
     precoRefri = 4.30;
 
     if (tem_prato && tem_refri && tem_sobremesa) {
@@ -200,6 +200,63 @@ function sobremesa4 () {
     if (tem_prato && tem_refri && tem_sobremesa) {
         ativarBotão()
     }
+}*/
+
+//Prato//
+
+function escolherPrato(opcaoPrato) {
+    const selecionado = document.querySelector(".prato-2.selecionado");
+    console.log(selecionado);
+    if(selecionado !== null){
+    selecionado.classList.remove("selecionado");
+    }
+    
+    const prato = document.querySelector("#"+opcaoPrato);
+    prato.classList.toggle("selecionado");
+
+    tem_prato = true;
+
+    if (tem_prato && tem_refri && tem_sobremesa) {
+        ativarBotão()
+    }
+}
+
+//Bebidas//
+
+function escolherBebida(opcaoBebida) {
+    const selecionado = document.querySelector(".bebida-2.selecionado");
+    console.log(selecionado);
+    if(selecionado !== null){
+    selecionado.classList.remove("selecionado");
+    }
+    
+    const bebida = document.querySelector("#"+opcaoBebida);
+    bebida.classList.toggle("selecionado");
+
+    tem_refri = true;
+
+    if (tem_prato && tem_refri && tem_sobremesa) {
+        ativarBotão()
+    }
+}
+
+//Sobremesa//
+
+function escolherSobremesa(opcaoSobremesa) {
+    const selecionado = document.querySelector(".sobremesa-2.selecionado");
+    console.log(selecionado);
+    if(selecionado !== null){
+    selecionado.classList.remove("selecionado");
+    }
+    
+    const sobremesa = document.querySelector("#"+opcaoSobremesa);
+    sobremesa.classList.toggle("selecionado");
+
+    tem_sobremesa = true;
+
+    if (tem_prato && tem_refri && tem_sobremesa) {
+        ativarBotão()
+    }
 }
 
 //Funcionalidade para ativar o botão de Fechar Pedido//
@@ -221,7 +278,7 @@ function finalizarPedido() {
     let nome= prompt("Pode nos informar seu nome?");
     let endereço= prompt("Nos informe endereço para entrega")
 
-    mensagem = `Olá, gostaria de fazer um pedido: \n\n- Prato: ${prato} \n- Bebida: ${refrigerante} \n- Sobremesa: ${sobremesa} \n\n Total: ${totalArredondado} \n\n Nome: ${nome} \n Endereço de destino: ${endereço}`;
+    mensagem = `Olá, gostaria de fazer um pedido: \n\n- Prato: ${prato} \n- Bebida: ${refrigerante} \n- Sobremesa: ${sobremesa} \n\n Total: ${totalArredondado} \n\n Nome: ${nome} \n Endereço de destino: R$${endereço}`;
 
     window.open("https://wa.me/5524999642965?text=" + encodeURI (mensagem));
 }
