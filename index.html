@@ -17,7 +17,7 @@
     <!--iNÍcio Pop-UP-->
 
     <div class="fundo-opaco escondido">
-        <div class="pop-up">
+        <div class="pop-up" data-identifier="confirmation-dialog">
           <div>
           <div class="titulo-popup">
           <h1>Confirme seu pedido</h1>
@@ -25,19 +25,19 @@
             <div class="caixa-pedidos-popup">
                 <div class="prato__pop-up">
                   <p id="prato-final" class="pedido-final">Prato</p>
-                  <p id="preco-prato-final" class="preco-pop-up">14.90</p>
+                  <p id="preco-prato-final" class="preco-pop-up">14,90</p>
                 </div>
                 <div class="bebida__pop-up">
                   <p id="bebida-final" class="pedido-final">Bebida</p>
-                  <p id="preco-bebida-final" class="preco-pop-up">4.90</p>
+                  <p id="preco-bebida-final" class="preco-pop-up">4,90</p>
                 </div>
                 <div class="sobremesa__pop-up">
                   <p id="sobremesa-final" class="pedido-final">Sobremesa</p>
-                  <p id="preco-sobremesa-final" class="preco-pop-up">7.90</p>
+                  <p id="preco-sobremesa-final" class="preco-pop-up">7,90</p>
                 </div>
                 <div class="total__pop-up">
                   <p class="pedido-final"><strong>Total</strong></p>
-                  <p id="preco-final" class="preco-pop-up">R$27.70</p>
+                  <p id="preco-final" class="preco-pop-up">R$27,70</p>
                 </div>
             </div>
             <button id="botao1" onclick="finalizarPedido()"> 
@@ -72,9 +72,9 @@
     
     <h1 class="titulo-1">Primeiro, seu prato</h1>
 
-    <div class="prato">
+    <div class="prato" data-identifier="dishes">
         
-        <div id="prato_1" class="prato-2" onclick="escolherPrato('prato_1', 'Frango Yin Yang', 14.90)">
+        <div id="prato_1" class="prato-2" onclick="escolherPrato('prato_1', 'Frango Yin Yang', 14,90)" data-identifier="food-option">
             <img class="imagens-site" src="./imagens/frango_yin_yang 1.png">
             <p class="nome-prato">Frango Yin Yang</p>
             <p class="descrição">Um pouco de batata, um pouco de salada</p>
@@ -82,7 +82,7 @@
             <img id = "icon-prato1" class="icon-verde" src="./imagens/Vector.png">
         </div>
         
-        <div id="prato_2" class="prato-2" onclick="escolherPrato('prato_2', 'Hamburguer', 18.90)">
+        <div id="prato_2" class="prato-2" onclick="escolherPrato('prato_2', 'Hamburguer', 18,90)" data-identifier="food-option">
             <img class="imagens-site" src="./imagens/hamburger-g17d7c2a9b_640.jpg">
             <p class="nome-prato">Hamburguer</p>
             <p class="descrição">Hamburguer, queijo e batata frita </p>
@@ -90,7 +90,7 @@
             <img id = "icon-prato2" class="icon-verde" src="./imagens/Vector.png">
         </div>
         
-        <div id="prato_3" class="prato-2" onclick="escolherPrato('prato_3', 'Pizza Marguerita', 20.90)">
+        <div id="prato_3" class="prato-2" onclick="escolherPrato('prato_3', 'Pizza Marguerita', 20,90)" data-identifier="food-option">
             <img class="imagens-site" src="./imagens/pizza-gfe6dca3dc_1920.jpg">
             <p class="nome-prato">Pizza Marguerita</p>
             <p class="descrição">Contém tomate e queijo</p>
@@ -98,7 +98,7 @@
             <img id= "icon-prato3" class="icon-verde" src="./imagens/Vector.png">
         </div>
         
-        <div id="prato_4" class="prato-2" onclick="escolherPrato('prato_4', 'Lasanha Bolonhesa', 16.90)">
+        <div id="prato_4" class="prato-2" onclick="escolherPrato('prato_4', 'Lasanha Bolonhesa', 16,90)" data-identifier="food-option">
             <img class="imagens-site" src="./imagens/meal-ge8c1ee634_1920.jpg">
             <p class="nome-prato">Lasanha Bolonhesa</p>
             <p class="descrição">Massa, carne moída, presunto e queijo </p>
@@ -111,9 +111,9 @@
 
     <h1 class="titulo-2">Agora, sua bebida</h1>
 
-    <div class="bebida">
+    <div class="bebida" data-identifier="drinks">
         
-        <div id="refri_1" class="bebida-2" onclick="escolherBebida('refri_1', 'Coca-Cola', 4.90)">
+        <div id="refri_1" class="bebida-2" onclick="escolherBebida('refri_1', 'Coca-Cola', 4,90)" data-identifier="food-option"> 
             <img class="imagens-site" src="./imagens/coquinha_gelada 1.png">
             <p class="nome-prato">Coca-Cola</p>
             <p class="descrição2">Lata 350ml</p>
@@ -121,7 +121,7 @@
             <img id="icon-bebida1" class="icon-verde" src="./imagens/Vector.png">
         </div>
         
-        <div id="refri_2" class="bebida-2" onclick="escolherBebida('refri_2', 'Pepsi', 4.50)">
+        <div id="refri_2" class="bebida-2" onclick="escolherBebida('refri_2', 'Pepsi', 4,50)" data-identifier="food-option">
             <img class="imagens-site" src="./imagens/PepsiCo.png">
             <p class="nome-prato">Pepsi</p>
             <p class="descrição2">Lata 350ml</p>
@@ -129,7 +129,7 @@
             <img id="icon-bebida2" class="icon-verde" src="./imagens/Vector.png">
         </div>
         
-        <div id="refri_3" class="bebida-2" onclick="escolherBebida('refri_3', 'Guaraná', 4.00)">
+        <div id="refri_3" class="bebida-2" onclick="escolherBebida('refri_3', 'Guaraná', 4,00)" data-identifier="food-option">
             <img class="imagens-site" src="./imagens/guarana-antarctica.jpg">
             <p class="nome-prato">Guaraná</p>
             <p class="descrição2">Lata 350ml</p>
@@ -137,7 +137,7 @@
             <img id="icon-bebida3" class="icon-verde" src="./imagens/Vector.png">
         </div>
         
-        <div id="refri_4" class="bebida-2" onclick="escolherBebida('refri_4', 'Fanta', 4.30)">
+        <div id="refri_4" class="bebida-2" onclick="escolherBebida('refri_4', 'Fanta', 4,30)" data-identifier="food-option">
             <img class="imagens-site" src="./imagens/fanta.jpg">
             <p class="nome-prato">Fanta</p>
             <p class="descrição2">Lata 350ml</p>
@@ -150,9 +150,9 @@
 
     <h1 class="titulo-2">Por fim, sua sobremesa</h1>
 
-    <div class="sobremesa">
+    <div class="sobremesa" data-identifier="desserts">
         
-        <div id="sobremesa_1" class="sobremesa-2" onclick="escolherSobremesa('sobremesa_1', 'Torta Alemã', 8.90)">
+        <div id="sobremesa_1" class="sobremesa-2" onclick="escolherSobremesa('sobremesa_1', 'Torta Alemã', 8,90)" data-identifier="food-option">
             <img class="imagens-site" src="./imagens/torta-holandesa-500x375.jpg">
             <p class="nome-prato">Torta Alemã</p>
             <p class="descrição2">A mais pedida</p>
@@ -160,7 +160,7 @@
             <img id="icon-sobremesa1" class="icon-verde" src="./imagens/Vector.png">
         </div>
         
-        <div id="sobremesa_2" class="sobremesa-2" onclick="escolherSobremesa('sobremesa_2', 'Açaí com Frutas', 12.90)">
+        <div id="sobremesa_2" class="sobremesa-2" onclick="escolherSobremesa('sobremesa_2', 'Açaí com Frutas', 12,90)" data-identifier="food-option">
             <img class="imagens-site" src="./imagens/açai.jpg">
             <p class="nome-prato">Açai com frutas</p>
             <p class="descrição2">O mais refrescante</p>
@@ -168,7 +168,7 @@
             <img id="icon-sobremesa2" class="icon-verde" src="./imagens/Vector.png">
         </div>
         
-        <div id="sobremesa_3" class="sobremesa-2" onclick="escolherSobremesa('sobremesa_3', 'Red Velvet', 9.90)">
+        <div id="sobremesa_3" class="sobremesa-2" onclick="escolherSobremesa('sobremesa_3', 'Red Velvet', 9,90)" data-identifier="food-option">
             <img class="imagens-site" src="./imagens/Receita-de-bolo-red-velvet.jpg">
             <p class="nome-prato">Red Velvet</p>
             <p class="descrição2">O mais gostoso</p>
@@ -176,7 +176,7 @@
             <img id="icon-sobremesa3" class="icon-verde" src="./imagens/Vector.png">
         </div>
         
-        <div id="sobremesa_4" class="sobremesa-2" onclick="escolherSobremesa('sobremesa_4', 'Pudim', 7.90)">
+        <div id="sobremesa_4" class="sobremesa-2" onclick="escolherSobremesa('sobremesa_4', 'Pudim', 7,90)" data-identifier="food-option">
             <img class="imagens-site" src="./imagens/pudim 1.png">
             <p class="nome-prato">Pudim</p>
             <p class="descrição2">Apenas pudim</p>

@@ -26,9 +26,10 @@ body {
     background-color: #50D074;
     border-radius: 9px;
     box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.25);
-    margin-left: 19px;
-    margin-top: 130px;
     display: flex;
+    align-items: center;
+    margin: auto auto;
+    margin-top: 130px;
 }
 .titulo-popup {
     width: 376px;
@@ -54,13 +55,13 @@ body {
     justify-content: space-between;
     
     font-family: Roboto;
-font-size: 22px;
-font-style: normal;
-font-weight: 300;
-line-height: 26px;
-letter-spacing: 0.018em;
-text-align: left;
-color: white;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 26px;
+    letter-spacing: 0.018em;
+    text-align: left;
+    color: white;
 
 }
 .bebida__pop-up {
@@ -68,26 +69,26 @@ color: white;
     justify-content: space-between;
     font-family: Roboto;
     font-size: 22px;
-font-style: normal;
-font-weight: 300;
-line-height: 26px;
-letter-spacing: 0.018em;
-text-align: left;
-color: white;
-margin-top: 13px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 26px;
+    letter-spacing: 0.018em;
+    text-align: left;
+    color: white;
+    margin-top: 13px;
 }
 .sobremesa__pop-up {
     display: flex;
     justify-content: space-between;
     font-family: Roboto;
-font-size: 22px;
-font-style: normal;
-font-weight: 300;
-line-height: 26px;
-letter-spacing: 0.018em;
-text-align: left;
-color: white;
-margin-top: 13px;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 26px;
+    letter-spacing: 0.018em;
+    text-align: left;
+    color: white;
+    margin-top: 13px;
 }
 .total__pop-up {
     display: flex;
@@ -95,7 +96,7 @@ margin-top: 13px;
     font-family: Roboto;
 font-size: 22px;
 font-style: normal;
-font-weight: 300;
+font-weight: 700;
 line-height: 26px;
 letter-spacing: 0.018em;
 text-align: left;

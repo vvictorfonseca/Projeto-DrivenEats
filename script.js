@@ -138,11 +138,11 @@ function abrirPopUp() {
     document.querySelector("#bebida-final").innerHTML = `${refriSelecionado}`;
     document.querySelector("#sobremesa-final").innerHTML = `${sobremesaSelecionada}`;
 
-    document.querySelector("#preco-prato-final").innerHTML = `R$${precoPrato.toFixed(2)}`;
-    document.querySelector("#preco-bebida-final").innerHTML = `R$${precoRefri.toFixed(2)}`;
-    document.querySelector("#preco-sobremesa-final").innerHTML = `R$${precoSobremesa.toFixed(2)}`;
+    document.querySelector("#preco-prato-final").innerHTML = `${precoPrato.toFixed(2)}`;
+    document.querySelector("#preco-bebida-final").innerHTML = `${precoRefri.toFixed(2)}`;
+    document.querySelector("#preco-sobremesa-final").innerHTML = `${precoSobremesa.toFixed(2)}`;
 
-    document.querySelector("#preco-final").innerHTML = `R$${totalArredondado}`;
+    document.querySelector("#preco-final").innerHTML = `R$ ${totalArredondado}`;
 }
 
 function fecharPopUp() {
