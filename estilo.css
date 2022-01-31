@@ -6,6 +6,105 @@ body {
     box-sizing: border-box;
 }
 
+.fundo-opaco {
+  display: block;
+  position: fixed;
+  top:0;
+  left:0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  background-color: rgba(255,255,255, 0.9);
+  display: flex;
+}
+.escondido {
+    display: none;
+}
+.pop-up {
+    width: 377px;
+    height: 353px;
+    background-color: #50D074;
+    border-radius: 9px;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.25);
+    margin-left: 19px;
+    margin-top: 130px;
+    display: flex;
+}
+.titulo-popup {
+    width: 376px;
+    height: 27px;
+    font-family: Roboto;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #ffffff;
+    background-color: chartreuse;
+    margin-top: 15px;
+}
+.caixa-pedidos-popup {
+    width: 326px;
+    height: 147px;
+    margin-top: 28px;
+    margin-left: 26px;
+    background-color: cadetblue;
+}
+.prato__pop-up {
+    display: flex;
+    justify-content: space-between;
+    background-color: chocolate;
+    font-family: Roboto;
+font-size: 22px;
+font-style: normal;
+font-weight: 300;
+line-height: 26px;
+letter-spacing: 0.018em;
+text-align: left;
+color: white;
+
+}
+.bebida__pop-up {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(166, 189, 86);
+    font-size: 22px;
+font-style: normal;
+font-weight: 300;
+line-height: 26px;
+letter-spacing: 0.018em;
+text-align: left;
+color: white;
+margin-top: 13px;
+}
+.sobremesa__pop-up {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(151, 106, 224);
+font-size: 22px;
+font-style: normal;
+font-weight: 300;
+line-height: 26px;
+letter-spacing: 0.018em;
+text-align: left;
+color: white;
+margin-top: 13px;
+}
+.total__pop-up {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(78, 163, 159);
+font-size: 22px;
+font-style: normal;
+font-weight: 300;
+line-height: 26px;
+letter-spacing: 0.018em;
+text-align: left;
+color: white;
+margin-top: 13px;
+}
+
 /* HEADER */
 
 .barra-topo {
@@ -17,6 +116,7 @@ body {
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 1;
 }
 .titulo {
     height: 44px;
@@ -51,11 +151,15 @@ body {
 
 .prato {
     display: flex;
-    overflow: scroll;
+    overflow-x: scroll;
 }
-.prato2 {
+.bebida {
     display: flex;
-    overflow: scroll;
+    overflow-x: scroll;
+}
+.sobremesa {
+    display: flex;
+    overflow-x: scroll;
     margin-bottom: 108px;
 }
 .titulo-1 {
@@ -72,6 +176,7 @@ body {
     letter-spacing: 0.018em;
     text-align: left;
 }
+/*usar seletor hierárquico*/
 .titulo-2 {
     width: 320px;
     height: 25px;
@@ -93,6 +198,7 @@ body {
     box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25);
     border-radius: 9px;
     border: 2px solid white;
+    position: relative;
 } 
 .bebida-2 {
     width: 172px;
@@ -102,6 +208,7 @@ body {
     box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25);
     border-radius: 9px;
     border: 2px solid white;
+    position: relative;
 } 
 .sobremesa-2 {
     width: 172px;
@@ -111,10 +218,17 @@ body {
     box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25);
     border-radius: 9px;
     border: 2px solid white;
+    position: relative;
 } 
 .selecionado {
     box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25), inset 0px 0px 0px 5px #32B72F;
     border-color: #32B72F;
+}
+.icon-verde {
+    position: absolute;
+    right: 12px;
+    bottom: 14px;
+    display: none;
 }
 .imagens-site {
     width: 144px;
@@ -154,6 +268,7 @@ body {
     text-align: left;
     color: #A6A6A6;
 }
+/*usar seletor hierárquico*/
 .descrição2 {
     width: 147px;
     height: 18px;
@@ -182,6 +297,7 @@ body {
     letter-spacing: 0em;
     text-align: left;
 }
+/*usar seletor hierárquico*/
 .preço2 {
     width: 66px;
     height: 19px;
@@ -199,10 +315,10 @@ body {
 .prato .prato-2:nth-child(4) {
     margin-right: 19px;
 }
-.prato .bebida-2:nth-child(4) {
+.bebida .bebida-2:nth-child(4) {
     margin-right: 19px;
 }
-.prato2 .sobremesa-2:nth-child(4) {
+.sobremesa .sobremesa-2:nth-child(4) {
     margin-right: 19px;
 }
 
@@ -231,6 +347,9 @@ body {
     line-height: 23px;
     letter-spacing: 0.018em;
     text-align: center;
+}
+.corBotao {
+    background-color: #32B72F;
 }
 .fechar-pedido {
     width: 200px;

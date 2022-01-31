@@ -13,6 +13,37 @@
     <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
+
+
+    <div class="fundo-opaco escondido">
+        <div class="pop-up">
+          <div>
+          <div class="titulo-popup">
+          <h1>Confirme seu pedido</h1>
+          </div>  
+            <div class="caixa-pedidos-popup">
+                <div class="prato__pop-up">
+                  <p class="pedido-final">Prato</p>
+                  <p class="preco-pop-up">14.90</p>
+                </div>
+                <div class="bebida__pop-up">
+                  <p class="pedido-final">Bebida</p>
+                  <p class="preco-pop-up">4.90</p>
+                </div>
+                <div class="sobremesa__pop-up">
+                  <p class="pedido-final">Sobremesa</p>
+                  <p class="preco-pop-up">7.90</p>
+                </div>
+                <div class="total__pop-up">
+                  <p class="pedido-final"><strong>Total</strong></p>
+                  <p class="preco-pop-up">27.70</p>
+                </div>
+            </div>
+          </div>   
+        </div>
+    </div>
+
+    </div>
     
     <!--HEADER-->
     
@@ -25,6 +56,8 @@
         </div>
     </div>
 
+    <!--POP-UP-->
+    
     <!--Corpo do site-->
 
     <!--Sessão pratos-->
@@ -33,32 +66,36 @@
 
     <div class="prato">
         
-        <div id="prato_1" class="prato-2" onclick="escolherPrato('prato_1')">
+        <div id="prato_1" class="prato-2" onclick="escolherPrato('prato_1', 'Frango Yin Yang', 14.90)">
             <img class="imagens-site" src="./imagens/frango_yin_yang 1.png">
             <p class="nome-prato">Frango Yin Yang</p>
             <p class="descrição">Um pouco de batata, um pouco de salada</p>
             <p class="preço">R$ 14,90</p>
+            <img id = "icon-prato1" class="icon-verde" src="./imagens/Vector.png">
         </div>
         
-        <div id="prato_2" class="prato-2" onclick="escolherPrato('prato_2')">
+        <div id="prato_2" class="prato-2" onclick="escolherPrato('prato_2', 'Hamburguer', 18.90)">
             <img class="imagens-site" src="./imagens/hamburger-g17d7c2a9b_640.jpg">
             <p class="nome-prato">Hamburguer</p>
             <p class="descrição">Hamburguer, queijo e batata frita </p>
             <p class="preço">R$ 18,90</p>
+            <img id = "icon-prato2" class="icon-verde" src="./imagens/Vector.png">
         </div>
         
-        <div id="prato_3" class="prato-2" onclick="escolherPrato('prato_3')">
+        <div id="prato_3" class="prato-2" onclick="escolherPrato('prato_3', 'Pizza Marguerita', 20.90)">
             <img class="imagens-site" src="./imagens/pizza-gfe6dca3dc_1920.jpg">
             <p class="nome-prato">Pizza Marguerita</p>
             <p class="descrição">Contém tomate e queijo</p>
             <p class="preço">R$ 20,90</p>
+            <img id= "icon-prato3" class="icon-verde" src="./imagens/Vector.png">
         </div>
         
-        <div id="prato_4" class="prato-2" onclick="escolherPrato('prato_4')">
+        <div id="prato_4" class="prato-2" onclick="escolherPrato('prato_4', 'Lasanha Bolonhesa', 16.90)">
             <img class="imagens-site" src="./imagens/meal-ge8c1ee634_1920.jpg">
             <p class="nome-prato">Lasanha Bolonhesa</p>
             <p class="descrição">Massa, carne moída, presunto e queijo </p>
             <p class="preço">R$ 16,90</p>
+            <img id="icon-prato4" class="icon-verde" src="./imagens/Vector.png">
         </div>
     </div>
 
@@ -66,34 +103,38 @@
 
     <h1 class="titulo-2">Agora, sua bebida</h1>
 
-    <div class="prato">
+    <div class="bebida">
         
-        <div id="refri_1" class="bebida-2" onclick="escolherBebida('refri_1')">
+        <div id="refri_1" class="bebida-2" onclick="escolherBebida('refri_1', 'Coca-Cola', 4.90)">
             <img class="imagens-site" src="./imagens/coquinha_gelada 1.png">
             <p class="nome-prato">Coca-Cola</p>
             <p class="descrição2">Lata 350ml</p>
             <p class="preço2">R$ 4,90</p>
+            <img id="icon-bebida1" class="icon-verde" src="./imagens/Vector.png">
         </div>
         
-        <div id="refri_2" class="bebida-2" onclick="escolherBebida('refri_2')">
+        <div id="refri_2" class="bebida-2" onclick="escolherBebida('refri_2', 'Pepsi', 4.50)">
             <img class="imagens-site" src="./imagens/PepsiCo.png">
             <p class="nome-prato">Pepsi</p>
             <p class="descrição2">Lata 350ml</p>
             <p class="preço2">R$ 4,50</p>
+            <img id="icon-bebida2" class="icon-verde" src="./imagens/Vector.png">
         </div>
         
-        <div id="refri_3" class="bebida-2" onclick="escolherBebida('refri_3')">
+        <div id="refri_3" class="bebida-2" onclick="escolherBebida('refri_3', 'Guaraná', 4.00)">
             <img class="imagens-site" src="./imagens/guarana-antarctica.jpg">
             <p class="nome-prato">Guaraná</p>
             <p class="descrição2">Lata 350ml</p>
             <p class="preço2">R$ 4,00</p>
+            <img id="icon-bebida3" class="icon-verde" src="./imagens/Vector.png">
         </div>
         
-        <div id="refri_4" class="bebida-2" onclick="escolherBebida('refri_4')">
+        <div id="refri_4" class="bebida-2" onclick="escolherBebida('refri_4', 'Fanta', 4.30)">
             <img class="imagens-site" src="./imagens/fanta.jpg">
             <p class="nome-prato">Fanta</p>
             <p class="descrição2">Lata 350ml</p>
             <p class="preço2">R$ 4,30</p>
+            <img id="icon-bebida4" class="icon-verde" src="./imagens/Vector.png">
         </div>
     </div>
 
@@ -101,45 +142,53 @@
 
     <h1 class="titulo-2">Por fim, sua sobremesa</h1>
 
-    <div class="prato2">
+    <div class="sobremesa">
         
-        <div id="sobremesa_1" class="sobremesa-2" onclick="escolherSobremesa('sobremesa_1')">
+        <div id="sobremesa_1" class="sobremesa-2" onclick="escolherSobremesa('sobremesa_1', 'Torta Alemã', 8.90)">
             <img class="imagens-site" src="./imagens/torta-holandesa-500x375.jpg">
             <p class="nome-prato">Torta Alemã</p>
             <p class="descrição2">A mais pedida</p>
             <p class="preço2">R$ 8,90</p>
+            <img id="icon-sobremesa1" class="icon-verde" src="./imagens/Vector.png">
         </div>
         
-        <div id="sobremesa_2" class="sobremesa-2" onclick="escolherSobremesa('sobremesa_2')">
+        <div id="sobremesa_2" class="sobremesa-2" onclick="escolherSobremesa('sobremesa_2', 'Açaí com Frutas', 12.90)">
             <img class="imagens-site" src="./imagens/açai.jpg">
             <p class="nome-prato">Açai com frutas</p>
             <p class="descrição2">O mais refrescante</p>
             <p class="preço2">R$ 12,90</p>
+            <img id="icon-sobremesa2" class="icon-verde" src="./imagens/Vector.png">
         </div>
         
-        <div id="sobremesa_3" class="sobremesa-2" onclick="escolherSobremesa('sobremesa_3')">
+        <div id="sobremesa_3" class="sobremesa-2" onclick="escolherSobremesa('sobremesa_3', 'Red Velvet', 9.90)">
             <img class="imagens-site" src="./imagens/Receita-de-bolo-red-velvet.jpg">
             <p class="nome-prato">Red Velvet</p>
             <p class="descrição2">O mais gostoso</p>
             <p class="preço2">R$ 9,90</p>
+            <img id="icon-sobremesa3" class="icon-verde" src="./imagens/Vector.png">
         </div>
         
-        <div id="sobremesa_4" class="sobremesa-2" onclick="escolherSobremesa('sobremesa_4')">
+        <div id="sobremesa_4" class="sobremesa-2" onclick="escolherSobremesa('sobremesa_4', 'Pudim', 7.90)">
             <img class="imagens-site" src="./imagens/pudim 1.png">
             <p class="nome-prato">Pudim</p>
             <p class="descrição2">Apenas pudim</p>
             <p class="preço2">R$ 7,90</p>
+            <img id="icon-sobremesa4" class="icon-verde" src="./imagens/Vector.png">
         </div>
     </div>
 
     <!--Footer-->
 
     <div class="barra-fundo">
+        
         <button disabled id="botao" onclick="finalizarPedido()">
             <p class="fechar-pedido">Selecione os 3 itens
                 para fechar o pedido</p>
         </button>
+        
     </div>
+
+
 
     <script src="script.js"></script>
 
