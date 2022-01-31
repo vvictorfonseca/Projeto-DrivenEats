@@ -14,6 +14,7 @@
 </head>
 <body>
 
+    <!--iNÍcio Pop-UP-->
 
     <div class="fundo-opaco escondido">
         <div class="pop-up">
@@ -23,27 +24,35 @@
           </div>  
             <div class="caixa-pedidos-popup">
                 <div class="prato__pop-up">
-                  <p class="pedido-final">Prato</p>
-                  <p class="preco-pop-up">14.90</p>
+                  <p id="prato-final" class="pedido-final">Prato</p>
+                  <p id="preco-prato-final" class="preco-pop-up">14.90</p>
                 </div>
                 <div class="bebida__pop-up">
-                  <p class="pedido-final">Bebida</p>
-                  <p class="preco-pop-up">4.90</p>
+                  <p id="bebida-final" class="pedido-final">Bebida</p>
+                  <p id="preco-bebida-final" class="preco-pop-up">4.90</p>
                 </div>
                 <div class="sobremesa__pop-up">
-                  <p class="pedido-final">Sobremesa</p>
-                  <p class="preco-pop-up">7.90</p>
+                  <p id="sobremesa-final" class="pedido-final">Sobremesa</p>
+                  <p id="preco-sobremesa-final" class="preco-pop-up">7.90</p>
                 </div>
                 <div class="total__pop-up">
                   <p class="pedido-final"><strong>Total</strong></p>
-                  <p class="preco-pop-up">27.70</p>
+                  <p id="preco-final" class="preco-pop-up">R$27.70</p>
                 </div>
             </div>
-          </div>   
+            <button id="botao1" onclick="finalizarPedido()"> 
+                <p class="texto-botão">Tudo certo, pode pedir!</p>
+            </button>
+            <button id="botao2" onclick="fecharPopUp ()">
+              <p class="texto-botão2">Cancelar</p>
+            </button>
+          </div> 
+          </div>
         </div>
-    </div>
 
     </div>
+
+    <!--fIM Pop-UP-->
     
     <!--HEADER-->
     
@@ -56,7 +65,6 @@
         </div>
     </div>
 
-    <!--POP-UP-->
     
     <!--Corpo do site-->
 
@@ -181,16 +189,14 @@
 
     <div class="barra-fundo">
         
-        <button disabled id="botao" onclick="finalizarPedido()">
+        <button disabled id="botao" onclick="abrirPopUp()">
             <p class="fechar-pedido">Selecione os 3 itens
                 para fechar o pedido</p>
         </button>
         
     </div>
 
-
-
-    <script src="script.js"></script>
+<script src="script.js"></script>
 
 </body>
 </html>

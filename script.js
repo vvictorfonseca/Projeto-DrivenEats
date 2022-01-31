@@ -119,13 +119,33 @@ function ativarBotão() {
 
 function finalizarPedido() {
     
-    total = precoPrato + precoRefri + precoSobremesa;
-    totalArredondado = total.toFixed(2);
-
     let nome= prompt("Pode nos informar seu nome?");
     let endereço= prompt("Nos informe endereço para entrega")
 
     mensagem = `Olá, gostaria de fazer um pedido: \n\n- Prato: ${pratoSelecionado} \n- Bebida: ${refriSelecionado} \n- Sobremesa: ${sobremesaSelecionada} \n\n Total: R$${totalArredondado} \n\n Nome: ${nome} \n Endereço de destino: ${endereço}`;
 
     window.open("https://wa.me/5524999642965?text=" + encodeURI (mensagem));
+}
+
+function abrirPopUp() {
+
+    total = precoPrato + precoRefri + precoSobremesa;
+    totalArredondado = total.toFixed(2);
+   
+    document.querySelector(".escondido").style.display = "block";
+
+    document.querySelector("#prato-final").innerHTML = `${pratoSelecionado}`;
+    document.querySelector("#bebida-final").innerHTML = `${refriSelecionado}`;
+    document.querySelector("#sobremesa-final").innerHTML = `${sobremesaSelecionada}`;
+
+    document.querySelector("#preco-prato-final").innerHTML = `R$${precoPrato.toFixed(2)}`;
+    document.querySelector("#preco-bebida-final").innerHTML = `R$${precoRefri.toFixed(2)}`;
+    document.querySelector("#preco-sobremesa-final").innerHTML = `R$${precoSobremesa.toFixed(2)}`;
+
+    document.querySelector("#preco-final").innerHTML = `R$${totalArredondado}`;
+}
+
+function fecharPopUp() {
+    
+    document.querySelector(".escondido").style.display = "none";
 }

@@ -41,7 +41,6 @@ body {
     letter-spacing: 0em;
     text-align: center;
     color: #ffffff;
-    background-color: chartreuse;
     margin-top: 15px;
 }
 .caixa-pedidos-popup {
@@ -49,12 +48,11 @@ body {
     height: 147px;
     margin-top: 28px;
     margin-left: 26px;
-    background-color: cadetblue;
 }
 .prato__pop-up {
     display: flex;
     justify-content: space-between;
-    background-color: chocolate;
+    
     font-family: Roboto;
 font-size: 22px;
 font-style: normal;
@@ -68,7 +66,7 @@ color: white;
 .bebida__pop-up {
     display: flex;
     justify-content: space-between;
-    background-color: rgb(166, 189, 86);
+    font-family: Roboto;
     font-size: 22px;
 font-style: normal;
 font-weight: 300;
@@ -81,7 +79,7 @@ margin-top: 13px;
 .sobremesa__pop-up {
     display: flex;
     justify-content: space-between;
-    background-color: rgb(151, 106, 224);
+    font-family: Roboto;
 font-size: 22px;
 font-style: normal;
 font-weight: 300;
@@ -94,7 +92,7 @@ margin-top: 13px;
 .total__pop-up {
     display: flex;
     justify-content: space-between;
-    background-color: rgb(78, 163, 159);
+    font-family: Roboto;
 font-size: 22px;
 font-style: normal;
 font-weight: 300;
@@ -103,6 +101,42 @@ letter-spacing: 0.018em;
 text-align: left;
 color: white;
 margin-top: 13px;
+}
+#botao1 {
+    margin: 24px 24px 0px 24px;
+    width: 333px;
+    height: 52px;
+    background-color: white;
+    border-radius: 50px;
+    border: none;
+}
+.texto-botão {
+    font-family: Roboto;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 26px;
+    letter-spacing: 0.018em;
+    text-align: center;
+    color: #50D074;
+}
+#botao2 {
+    margin: 0px 24px 0px 24px;
+    width: 333px;
+    height: 52px;
+    background-color:#50D074;
+    border-radius: 50px;
+    border: none;
+}
+.texto-botão2 {
+    color: white;
+    font-size: 20px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 26px;
+    letter-spacing: 0.018em;
+    text-align: center;
 }
 
 /* HEADER */
@@ -347,6 +381,7 @@ margin-top: 13px;
     line-height: 23px;
     letter-spacing: 0.018em;
     text-align: center;
+    border: none;
 }
 .corBotao {
     background-color: #32B72F;
